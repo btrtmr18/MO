@@ -1,0 +1,23 @@
+<div id="time"></div>
+<script language="JavaScript">
+<!--
+var pos = document.getElementById("time");
+function time() {
+var today = new Date();
+var day_of_week = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+var month_of_year = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+var day_ = day_of_week[today.getDay()];
+var date_ = today.getDate();
+var month_ = month_of_year[today.getMonth()];
+var year_ = today.getFullYear();
+var hours_ = today.getHours();
+var min_ = today.getMinutes();
+var sec_ = today.getSeconds();
+var zerom = zeros = '';
+if(min_ < 10) zerom = '0';
+if(sec_ < 10) zeros = '0';
+pos.innerHTML = day_+' '+date_+' '+month_+' '+year_+' г. '+hours_+':'+zerom+min_+':'+zeros+sec_;
+}
+setInterval(time, 1);
+//-->
+</script>
